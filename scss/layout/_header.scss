@@ -18,15 +18,15 @@
   .header__description {
     font-size: 1.5em;
     line-height: 1.5em;
-    margin-bottom: 30px;
 
     grid-column: span 12;
+    max-width: 66.666%;
   }
 
   .header__actions {
-    margin-top: 30px;
     grid-column: span 12;
-
+    margin-top: 50px;
+    
     .header__button {
       text-decoration: none;
       color: $secondary-color;
@@ -34,6 +34,14 @@
       border-radius: 3px;
       font-weight: bold;
       background: $teritary-background;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .header__description {
+      max-width: 100%;
     }
   }
 }

@@ -59,11 +59,11 @@ strong {
   .header .header__description {
     font-size: 1.5em;
     line-height: 1.5em;
-    margin-bottom: 30px;
-    grid-column: span 12; }
+    grid-column: span 12;
+    max-width: 66.666%; }
   .header .header__actions {
-    margin-top: 30px;
-    grid-column: span 12; }
+    grid-column: span 12;
+    margin-top: 50px; }
     .header .header__actions .header__button {
       text-decoration: none;
       color: #fff;
@@ -71,6 +71,10 @@ strong {
       border-radius: 3px;
       font-weight: bold;
       background: #00de94; }
+
+@media screen and (max-width: 768px) {
+  .header .header__description {
+    max-width: 100%; } }
 
 .content a {
   color: #00cb84; }
