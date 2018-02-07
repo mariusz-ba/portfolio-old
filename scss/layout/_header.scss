@@ -1,0 +1,39 @@
+@import '../base/_constants';
+
+.header {
+  background: $secondary-background;
+  color: $secondary-color;
+
+  padding-top: 50px;
+  padding-bottom: 70px;
+  
+  .header__title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+    grid-column: span 12;
+  }
+
+  .header__description {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+
+    grid-column: span 12;
+  }
+
+  .header__actions {
+    margin-top: 30px;
+    grid-column: span 12;
+
+    .header__button {
+      text-decoration: none;
+      color: $secondary-color;
+      padding: 20px;
+      border-radius: 3px;
+      font-weight: bold;
+      background: $teritary-background;
+    }
+  }
+}

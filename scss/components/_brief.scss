@@ -1,0 +1,51 @@
+.brief {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .brief__paragraph {
+    grid-column: 1;
+    grid-column-gap: 50px;
+    padding: 150px 0;
+  }
+
+  .brief__image {
+    grid-column: 2;
+    position: relative;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 83%;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .brief {
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    
+    .brief__image {
+      grid-column: 1;
+      grid-row: 1;
+
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        padding: 3px;
+        box-shadow: 0 0 5px #666;
+      }
+    }
+
+    .brief__paragraph {
+      grid-column: 1;
+      grid-row: 2;
+      padding: 50px 0;
+    }
+  }
+}
