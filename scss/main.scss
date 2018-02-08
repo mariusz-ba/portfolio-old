@@ -9,13 +9,13 @@
 
 @import 'components/_brief';
 @import 'components/_stack';
+@import 'components/_portfolio';
+@import 'components/_contact';
 
 .light {
   background: $primary-background;
-}
-
-.shadow {
   border-bottom: 1px solid rgba(0,0,0,.125);
+  border-top: 1px solid rgba(0,0,0,.125);
 }
 
 body {

@@ -1,0 +1,67 @@
+@import '../base/_constants';
+@import '../base/_typography';
+
+.green {
+  background: $secondary-background;
+  color: $secondary-color;
+}
+
+.contact {
+  padding: 100px 0;
+  
+  .contact__form {
+    display: grid;
+    grid-template-rows: 50px 150px;
+    grid-row-gap: 50px;
+
+    input, textarea {
+      border: 0;
+      outline: 0;
+      background: $teritary-background;
+      border-radius: 3px;
+      padding: 10px;
+      font-size: 1.2em;
+      color: $secondary-color;
+      font-family: $font-stack;
+
+      &:focus {
+        box-shadow: inset 0 0 2px #666;
+      }
+
+      &::placeholder {
+        color: #fafafa;
+      }
+    }
+
+    .contact__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 50px;
+    }
+
+    .contact__form--name {
+      grid-column: span 1;
+    }
+
+    .contact__form--email {
+      grid-column: span 1;
+    }
+
+    .contact__form--content {
+      grid-column: span 2;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    .contact__form {
+      grid-template-rows: auto auto auto;
+      
+      .contact__row {
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+      }
+    }
+  }
+}
