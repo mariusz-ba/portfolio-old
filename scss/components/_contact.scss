@@ -13,6 +13,8 @@
     display: grid;
     grid-template-rows: 50px 150px;
     grid-row-gap: 50px;
+    max-width: 768px;
+    margin: 0 auto;
 
     input, textarea {
       border: 0;

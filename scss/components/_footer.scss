@@ -1,0 +1,28 @@
+footer {
+  padding: 50px 0;
+  background: #333;
+  color: #fff;
+
+  .footer {
+    text-align: center;
+
+    .footer__images {
+      .footer__images--facebook,
+      .footer__images--github,
+      .footer__images--instagram,
+      .footer__images--linkedin {
+        width: 32px;
+        height: auto;
+        margin: 8px;
+      }
+    }
+    .footer__paragraph {
+      margin-top: 20px;
+      color: #aaa;
+
+      strong {
+        color: #fff;
+      }
+    }
+  }
+}
